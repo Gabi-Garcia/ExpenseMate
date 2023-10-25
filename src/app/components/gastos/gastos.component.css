@@ -1,9 +1,19 @@
-.card{
+/* .card{
     width:100%;
-}
+} */
 .card{
+    background-color: rgb(236, 123, 82);
+    width:100%;
     max-width: 1200px;
     margin: auto;
-   
-
+    margin-top: 50px;
+}
+h2{ 
+    margin: auto;
+    margin-top:50px;
+    padding: 5px;
+    width:99%;
+    color: rgb(99, 178, 243);
+    font-weight: bold;
+    font-size:2rem;
 }

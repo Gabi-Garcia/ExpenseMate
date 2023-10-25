@@ -1,23 +1,48 @@
-<div class="row mt-5">
+
+<div class="caja-cabecera">
+  <div class="image-title"><img src="../../../assets/presupuesto.png" alt="image title"></div>
+  <h1 class="text-center">ExpenseMate</h1>
+</div>
+  <p class="text-center">Tu asistente personal para presupuestos.  Únete ahora y desata el potencial de tus finanzas.</p>
+
+<div class=" row mt-3">
    <div class="col-lg-6 offset-lg-3">
-
-      <h2 class="text-center fontTitle">Ingrese Presupuesto</h2>
-
-      <div class="card">
+     <div class="card">
+        <h2 class="text-center">Ingrese su presupuesto inicial</h2>
           <div class="card-body">
-
-            <div *ngIf= "cantidadIncorrecta" class="text-center mb-3" >
+            <div *ngIf= "cantidadIncorrecta" class="text-center mb-2" >
                 <span class="badge bg-danger textError">EL PRESUPUESTO DEBE SER MAYOR A 0</span>
-            </div>
-          
-
-
-            <input type="number" [(ngModel)]= "cantidad" class="form-control form-control-lg" placeholder="Ingrese su presupuesto">
+            </div>        
+            <input type="number" [(ngModel)]= "cantidad" class="form-control form-control-lg" placeholder="Presupuesto">
             <button class="mt-3 btn btn-secondary btn-lg btn-block" (click)= "agregar()">ACEPTAR</button>
           </div>
-
       </div>
-
    </div>
-
 </div>
+<footer>
+  <ul>
+    <li>
+      <a href="https://github.com/Gabi-Garcia"  target="_blank">
+        <div class="imgFooter">
+          <img src="../../../assets/github (1).png" alt="Github-img">
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/gabriel-garcia-ab029b210/" target="_blank">
+        <div class="imgFooter">
+          <img src="../../../assets/logotipo-de-linkedin (1).png" alt="Linkedin-img">
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:gabriel.garcia.development@gmail.com">
+        <div class="imgFooter">
+          <img src="../../../assets/email.png" alt="email-img">
+        </div>
+      </a>
+    </li>      
+  </ul>
+  <p>©️Creado por Gabi-Garcia</p>
+</footer>
+ 
