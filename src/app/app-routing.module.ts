@@ -5,11 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { IngresarPresupuestoComponent } from './components/ingresar-presupuesto/ingresar-presupuesto.component';
 import { GastosComponent } from './components/gastos/gastos.component';
 
-
-
 //modulos
-
-
 
 const routes: Routes = [
   {

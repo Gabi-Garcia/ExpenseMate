@@ -9,12 +9,12 @@ import { PresupuestoService } from 'src/app/services/presupuesto.service';
 })
 export class IngresarPresupuestoComponent implements OnInit {
 
-  cantidad:number;
+  cantidad:any;
   cantidadIncorrecta:boolean
 
 constructor(private _presupuestoService:PresupuestoService, 
             private router: Router){
-  this.cantidad= 0;
+  this.cantidad;
   this.cantidadIncorrecta = false;
  
 }
@@ -24,10 +24,10 @@ constructor(private _presupuestoService:PresupuestoService,
   }
 
   agregar(){
-    if(this.cantidad >0){
+    if(this.cantidad > 0){
       this.cantidadIncorrecta = false;
       this._presupuestoService.presupuesto = this.cantidad;
-      this._presupuestoService.restante =this.cantidad
+      this._presupuestoService.restante = this.cantidad
       this.router.navigate(['/gastos'])
   }else{
     this.cantidadIncorrecta = true
