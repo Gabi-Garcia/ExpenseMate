@@ -1,6 +1,4 @@
-/* .card{
-    width:100%;
-} */
+
 .card{
     background-color: rgb(236, 123, 82);
     width:100%;
@@ -13,7 +11,7 @@ h2{
     margin-top:50px;
     padding: 5px;
     width:99%;
-    color: rgb(99, 178, 243);
+    color: rgb(173, 206, 233);
     font-weight: bold;
     font-size:3rem;
 }

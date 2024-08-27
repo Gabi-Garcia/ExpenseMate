@@ -1,11 +1,11 @@
-<h4 class="text-center">Listado de Gastos</h4>
+<h4 class="text-center">Listado de Gastos</h4> 
 <hr>
 
 <div class="row" style="margin-top: 40px;">
    <div class="col-lg-6">
     <div class="alert alert-success sizeAlert">
       
-        Presupuesto: <strong>{{presupuesto | currency}}</strong>
+        Presupuesto: <strong>{{presupuesto}}</strong>
     </div>
  
    </div>
@@ -13,7 +13,7 @@
    <div class="col-lg-6">
 
     <div class="sizeAlert" [ngClass]= "aplicarColorRestante()">
-        Restante: <strong>{{restante | currency}}</strong>
+        Restante: <strong>{{restante }}</strong>
     </div>
    </div>
 
@@ -22,7 +22,7 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item d-flex justify-content-between" *ngFor= "let item of listGastos">
                 <strong>{{ item.nombre }}</strong>
-                <span class="badge rounded-pill bg-secondary">{{ item.cantidad | currency }}</span>
+                <span class="badge rounded-pill bg-secondary">{{ item.cantidad  }}</span>
             </li>
         </ul>
       </div>
